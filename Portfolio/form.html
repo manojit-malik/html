@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h3> Contact Form</h3>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- action="action.php" will send the response to "action.php" file which is a backend file. It is use to store or perform the action as per the code for "action.php" file. -->
+        <form action="action.php">
+            <input type="text" placeholder="username"/>
+    <!-- the type is text(visible) --  to show the username written in the input box -->
+            <input type="password" placeholder="password"/>
+<!-- to show password in bullet forms --  to show the password written in the input box -->
+
+<br><br>
+        <h4>Select your engineering branch</h4>
+            <!-- By label we can click on the text part on the HTML page and the radio button will still be selected -->
+            <label for="11">
+                <input type="radio" value="ENTC" name="class" id="11"> ENTC
+            </label>
+            <br>
+            <label for="12">
+                <input type="radio" value="CSE" name="class" id="12"> CSE
+            </label>
+            <br>
+            <label for="13">
+                <input type="radio" value="IT" name="class" id="13"> IT
+            </label>
+
+            <br><br>
+
+            <h4>Select your preffered language</h4>
+            <label for="1">
+                <input type="checkbox" value="C++" id="1">C++
+            </label>
+            <br>
+            <label for="2">
+            <input type="checkbox" value="Java" id="2">Java
+            </label>
+            <br>
+            <label for="3">
+                <input type="checkbox" value="JavaScript" id="3">JavaScript
+            </label>
+            <br><br>
+
+            <textarea name="feedback" placeholder="Type your message here" rows="5" cols="30">Message</textarea>
+            <br><br>
+
+            <select name="city">
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="submit">
+       
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <small>contact: man@wwe.malik</small>
+    </footer>
+    
+</body>
+</html>
